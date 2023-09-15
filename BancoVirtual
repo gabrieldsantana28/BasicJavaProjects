@@ -1,0 +1,58 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        double valor, transferir = 0;
+        int menu = 0;
+        String nome = "Gabriel L. de Santana";
+        double saldoInicial = 0;
+        Scanner leitura = new Scanner(System.in);
+
+        while (menu != 4) {
+            System.out.println("********************************");
+            System.out.println(" Dados iniciais do cliente:");
+            System.out.println();
+            System.out.println(" Nome: " + nome);
+            System.out.println(" Tipo de conta: Corrente");
+            System.out.println(" Saldo inicial: " + saldoInicial);
+            System.out.println("********************************");
+            System.out.println();
+            System.out.println("--------------MENU--------------");
+            System.out.println();
+            System.out.println(" 1- Consultar saldos");
+            System.out.println(" 2- Receber valor");
+            System.out.println(" 3- Transferir valor");
+            System.out.println(" 4- Sair");
+            System.out.println();
+            System.out.println(" Insira a opção que deseja: ");
+            menu = leitura.nextInt();
+
+            if (menu == 1) {
+                System.out.println();
+                System.out.println(" Saldo da conta: " + saldoInicial);
+            } else if (menu == 2) {
+                System.out.println();
+                System.out.println(" Insira o valor que deseja receber: ");
+                valor = leitura.nextDouble();
+                saldoInicial += valor;
+                System.out.println(" Recebimento confirmado!");
+            } else if (menu == 3) {
+                System.out.println();
+                System.out.println(" Insira o valor que deseja transferir: ");
+                transferir = leitura.nextDouble();
+                if (transferir > saldoInicial) {
+                    System.out.println("Você não pode transferir um valor maior que seu saldo!");
+                } else if (transferir <= saldoInicial) {
+                    saldoInicial -= transferir;
+                    System.out.println(" Transferência confirmada!");
+                }
+                3
+
+
+            }
+
+
+        }
+
+    }
+}
