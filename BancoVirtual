@@ -46,7 +46,6 @@ public class Main {
                     saldoInicial -= transferir;
                     System.out.println(" Transferência confirmada!");
                 }
-                3
 
 
             }
