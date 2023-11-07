@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class AreaPerimetroRaio {
+    public static void main(String[] args) {
+        Scanner leia = new Scanner(System.in);
+
+        System.out.println("Insira o valor do raio: ");
+        double raio = leia.nextDouble();
+
+        double perimetro = 2 * 3.14159 * raio;
+        double area = 3.14159 * (raio * raio);
+
+        System.out.println("Perímetro: " + perimetro + " metros");
+        System.out.println("Área: " + area + " metros");
+    }
+}
