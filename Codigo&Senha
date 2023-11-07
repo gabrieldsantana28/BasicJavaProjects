@@ -1,0 +1,25 @@
+package br.senai.atividades.data11do10do23;
+
+import java.util.Scanner;
+
+public class CódigoESenha {
+    public static void main(String[] args) {
+        Scanner leia = new Scanner(System.in);
+
+        System.out.println("Insira o código de usuário: ");
+        int cod = leia.nextInt();
+
+        if (cod == 1234) {
+            System.out.println("Insira a senha de acesso: ");
+            int senha = leia.nextInt();
+
+            if (senha == 9999) {
+                System.out.println("Acesso permitido!");
+            } else {
+                System.out.println("Acesso negado");
+            }
+        } else {
+            System.out.println("O código de usuário inserido está incorreto!");
+        }
+    }
+}
