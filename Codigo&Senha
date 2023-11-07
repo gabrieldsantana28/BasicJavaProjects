@@ -1,5 +1,3 @@
-package br.senai.atividades.data11do10do23;
-
 import java.util.Scanner;
 
 public class CódigoESenha {
