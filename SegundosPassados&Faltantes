@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class SegundosPassados&Faltantes {
+    public static void main(String[] args) {
+        Scanner leia = new Scanner(System.in);
+        int sPassados = 0;
+        int sFaltantes = 86400;
+
+        System.out.println("Insira as horas: ");
+        int h = leia.nextInt();
+        System.out.println("Insira os minutos: ");
+        int m = leia.nextInt();
+        System.out.println("Insira os segundos: ");
+        int s = leia.nextInt();
+
+        m *= 60;
+        h *= 3600;
+        sPassados = h + s + m;
+        System.out.println("Se passaram desde as 0h00min0s: " + sPassados + " segundos");
+        sFaltantes -= sPassados;
+        System.out.println("Faltam " + sFaltantes + " segundos para meia-noite");
+    }
+}
