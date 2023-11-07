@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class CustoCarro {
+    public static void main(String[] args) {
+        Scanner leia = new Scanner(System.in);
+        double custoCarro, custoFinal = 0;
+
+        System.out.println("Insira o custo do carro: ");
+        custoCarro = leia.nextDouble();
+
+        custoFinal = custoCarro + custoCarro * 0.28;
+        custoFinal = custoFinal + custoFinal * 0.45;
+
+        System.out.println("Custo final do carro: " + custoFinal);
+    }
+}
