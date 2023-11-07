@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class NumeroPrimo {
+    public static void main(String[] args) {
+        Scanner leia = new Scanner(System.in);
+        int primo = 0;
+
+        System.out.println("Número inicial: ");
+        int inicio = leia.nextInt();
+        System.out.println("Número final: ");
+        int fim = leia.nextInt();
+
+        for (int i = inicio; i <= fim; i++) {
+            for (int j = 1; j <= i; j++) {
+                if (i % j == 0) {
+                    primo++;
+                }
+            }
+            if (primo == 2) {
+                System.out.println("Número primo identificado: " + i);
+            }
+            primo = 0;
+        }
+    }
+}
