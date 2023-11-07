@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Atividade1 {
+    public static void main(String[] args) {
+        Scanner leia = new Scanner(System.in);
+
+        System.out.println("Insira o número fracionário: ");
+        double nf1 = leia.nextDouble();
+
+        System.out.println("Insira o número fracionário: ");
+        double nf2 = leia.nextDouble();
+
+        System.out.println("Insira o número fracionário: ");
+        double nf3 = leia.nextDouble();
+
+        if (nf1 > (nf2 + nf3)) {
+            System.out.println("O primeiro número fracionário é maior que a soma dos dois últimos!");
+        } else if (nf1 < (nf2 + nf3)) {
+            System.out.println("Os dois últimos números fracionários somados são maiores que o primeiro número fracionário!");
+        } else {
+            System.out.println("O primeiro número fracionário é igual a soma dos dois últimos!");
+        }
+        leia.close();
+    }
+}
